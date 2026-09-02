@@ -1,0 +1,43 @@
+{
+  "name": "latex-cv-studio",
+  "version": "1.0.0",
+  "description": "Real-time, web-based LaTeX CV editor and generator",
+  "main": "server/index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon server/index.js",
+    "client": "vite",
+    "build": "vite build",
+    "dev": "concurrently \"nodemon server/index.js\" \"vite\"",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "latex",
+    "cv",
+    "resume",
+    "editor",
+    "pdflatex",
+    "react"
+  ],
+  "author": "Impactabdou",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "lucide-react": "^0.395.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.2",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.2.13"
+  }
+}

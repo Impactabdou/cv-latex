@@ -1,0 +1,9 @@
+node_modules
+dist
+build
+.system_generated
+*.aux
+*.log
+*.out
+*.toc
+.DS_Store
